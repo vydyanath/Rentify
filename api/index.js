@@ -39,7 +39,8 @@ app.use(express.json());
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    methods: ["GET" , "PUT" , "POST" ,"DELETE"],
     credentials: true,
   })
 );
